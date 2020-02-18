@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "846948659209",
+    "firebase_url": "https://rflxn-8e183.firebaseio.com",
+    "project_id": "rflxn-8e183",
+    "storage_bucket": "rflxn-8e183.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846948659209:android:8296083bf4b1a6207488d8",
+        "android_client_info": {
+          "package_name": "com.olaolukiyesi.mysmartmirror"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846948659209-phr8ft2i20taes7fgv49o0c13sm4bqb1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqlGEWq6jNTgmRz2oQLZhZ5C1tB2F3rdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846948659209-phr8ft2i20taes7fgv49o0c13sm4bqb1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
