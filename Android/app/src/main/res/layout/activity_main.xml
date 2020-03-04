@@ -5,24 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/main_layout"
     android:background="@drawable/main"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/rflxn"
-        android:layout_width="183dp"
-        android:layout_height="89dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="43dp"
-        android:layout_marginTop="240dp"
         android:fontFamily="@font/sansation_light"
-        android:gravity="top"
-        android:paddingLeft="10dp"
+        android:paddingLeft="35dp"
         android:text="RFLXN"
         android:textAppearance="@style/main_text" />
 
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:paddingTop="13sp"
+        android:clipToPadding="false"
+        android:paddingLeft="35dp"
+        android:layout_width="184sp"
+        android:layout_height="wrap_content"
+        />
 
 
 </LinearLayout>
