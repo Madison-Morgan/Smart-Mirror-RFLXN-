@@ -12,7 +12,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.olaolukiyesi.mysmartmirror.Models.Settings;
 import com.olaolukiyesi.mysmartmirror.Models.User;
+
+import java.util.HashMap;
 
 import static android.content.ContentValues.TAG;
 
@@ -22,6 +25,7 @@ public class  FireStoreServeImpl {
 
     FirebaseFirestore db;
     String userID;
+    User activeUser;
     public static FireStoreServeImpl getInstance() {
         if(instance== null){
             instance = new FireStoreServeImpl();
@@ -41,6 +45,10 @@ public class  FireStoreServeImpl {
 
 
     }
+    public User getCurrentUser(){
+        return activeUser;
+
+    }
     public void validateUser(final User current) {
         userID = current.getUserID();
 
@@ -52,6 +60,8 @@ public class  FireStoreServeImpl {
                     DocumentSnapshot cur_user = task.getResult();
                     if(cur_user.exists()){
                         Log.d(TAG, "onComplete: User Already Exists in DB");
+
+                        activeUser = new User(userID,(boolean)cur_user.get("verified"),current.getEmail(),(HashMap) cur_user.get("userSettings"));
                     }
                     else{
                         Log.d(TAG, "No such User in DB ");
