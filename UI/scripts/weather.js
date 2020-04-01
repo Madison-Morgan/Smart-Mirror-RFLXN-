@@ -3,10 +3,10 @@
 function showWeather(){
 
     function displayWeather(data){
-        var temperature = Math.round(parseFloat(data.main.temp)-273.15) + ' &#176 C';
+        var temperature = Math.round(parseFloat(data.main.temp)-273.15) + ' \u00B0C';
         var description = data.weather[0].description;
         var location = data.name;
-        var feelsLike = "Feels like " + Math.round(parseFloat(data.main.feels_like)-273.15) + ' &#176 C';
+        var feelsLike = "Feels like " + Math.round(parseFloat(data.main.feels_like)-273.15) + ' \u00B0C';
         var weatherIcon = null;
 
         if( description.indexOf('rain') > 0 ) {
@@ -19,8 +19,9 @@ function showWeather(){
 
         if(document.getElementById("location-container")!=null){
             document.getElementById("location-container").innerHTML=location;
-            document.getElementById("weather-icon").className = weatherIcon;
-            document.getElementById("temp-container").innerHTML= temperature;
+            //document.getElementById("weather-icon").className = weatherIcon;
+            document.getElementById("temp-container").firstChild.className = weatherIcon;
+            document.getElementById("temp-container").lastChild.innerHTML = temperature;
             document.getElementById("feels_like-container").innerHTML = feelsLike;
         }
         else{
