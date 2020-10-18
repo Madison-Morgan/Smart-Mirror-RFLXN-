@@ -1,3 +1,5 @@
+# Code to measure ambient temperature
+
 import RPi.GPIO as GPIO
 from time import sleep
 import datetime
@@ -21,14 +23,11 @@ pin = 23
 
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
+
 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 
 
-firebase = firebase.FirebaseApplication('https://capstonepi-e514c.firebaseio.com/', None)
-
-#database test code
-#firebase.put("/dht", "/temp", "0.00")
-#firebase.put("/dht", "/humidity", "0.00")
+firebase = firebase.FirebaseApplication('https://rflxn-8e183.firebaseio.com/', None)
 
 def update_firebase():
 
