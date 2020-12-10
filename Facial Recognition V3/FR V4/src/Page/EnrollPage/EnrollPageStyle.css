@@ -1,0 +1,47 @@
+.nameInput {
+    color: cornsilk;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    top: 30%;
+}
+
+.greetTxt {
+    color: cornsilk;
+    text-align: center;
+    font-family: monospace;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 13%
+}
+
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
+
+.personBtn {
+    color: cornsilk;
+    background-color: black;
+    font-family: monospace;
+    border-color: white;
+    height: 3rem;
+    font-size: 20px;
+    text-align: end;
+    font-size: 20px;
+    position: relative;
+    left: 5%;
+}
+
+.personBtn:hover {
+    background-color:white;
+}

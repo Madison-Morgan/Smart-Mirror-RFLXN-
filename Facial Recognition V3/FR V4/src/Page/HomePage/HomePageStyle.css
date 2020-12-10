@@ -1,0 +1,49 @@
+.pageBody {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.titleTxt {
+    color: cornsilk;
+    text-align: center;
+    font-family: monospace;
+    position: relative;
+    top: 40%;
+}
+
+.btn1{
+    color: cornsilk;
+    background-color: black;
+    font-family: monospace;
+    border-color: black;
+    height: 3rem;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+}
+
+.btn1:hover{
+    border-color: black;
+    color: black;
+}
+
+.btn2{
+    color: cornsilk;
+    background-color: black;
+    font-family: monospace;
+    border-color: black;
+    height: 3rem;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.btn2:hover{
+    border-color: black;
+    color: black;
+}
