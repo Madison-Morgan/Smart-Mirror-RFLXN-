@@ -1,0 +1,22 @@
+video {
+  display: block;
+}
+
+
+.cameraBtn {
+  color: cornsilk;
+  background-color: black;
+  font-family: monospace;
+  border-color: white;
+  height: 3rem;
+  font-size: 20px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.cameraBtn:hover{
+  border-color: white;
+  color: black;
+}

@@ -1,2 +1,2 @@
-# Smart-Mirror-RFLXN-
+# Smart-Mirror-RFLXN-FINAL
 Engineering Capstone Project
